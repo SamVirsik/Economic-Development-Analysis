@@ -9,7 +9,7 @@ The project relies on multiple datasets:
 
 ## Methodology
 1. Data Cleaning and Processing  
-Merging datasets from different sources with varying formats and conventions. (All work done with pandas dataframes)  
+Merged datasets from different sources with varying formats and conventions. (All work done with pandas dataframes)  
 Handling missing values, ensuring consistent country name mappings.  
 Standardizing economic indicators for analysis across different timeframes.  
 2. Feature Selection  
@@ -22,3 +22,17 @@ Compiled results in boxplots to visualize which predictors are most often highly
 Visualized relationships in ≈180 countries over 70+ year time-frame.  
 
 ## Key Findings
+- Population-based variables consistently show the highest correlation with GDP per capita.
+- Employment levels (labor force participation) correlate more strongly with economic growth than imports/exports.
+- Trade impact is significant but secondary, with imports slightly outperforming exports in predictive strength.
+- Health indicators matter but are harder to analyze at a large scale due to directional ambiguity.
+
+## Notable Constraints
+The analysis finds strong relationships but cannot establish direct causality (only correlation based analysis).  
+Overlapping data sources with different conventions required extensive cleaning, possible data loss through mislabeling.  
+The dataset spans ~180 countries and ~70 years - correlation computation could have been made more efficient.  
+
+## File Specifics
+EconomicDevelopment: File with data processing work and correlation analysis.  
+TradeDevelopment: File with visualizations of trade-related trends, also visualization algorithms.  
+Economic Growth Project Presentation: Powerpoint presentation I created to explain the project to a non-technical audience.  
